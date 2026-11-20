@@ -164,6 +164,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
   min-height: 100svh;
   display: flex; flex-direction: column; justify-content: flex-end;
   overflow: hidden;
+  padding-top: 110px;
   padding-bottom: clamp(24px, 4vw, 48px);
   isolation: isolate;
 }
@@ -211,8 +212,9 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 .hero-title { margin: 0; font-weight: 400; line-height: .82; letter-spacing: -.06em; }
 .hero-title .line { display: block; overflow: hidden; position: relative; }
 .hero-title .line > span { display: inline-block; animation: up 1.2s var(--ease) both; }
-.hero-title .l1 { font-size: clamp(88px, 22vw, 340px); z-index: 0; margin-left: -.04em; }
-.hero-title .l2 { font-size: clamp(36px, 10.6vw, 168px); text-align: right; z-index: 3; margin-top: -.05em; padding-bottom: .04em; }
+.hero-title .l1 { font-size: clamp(88px, min(22vw, 34svh), 340px); z-index: 3; margin-left: -.04em; }
+.hero .wrap { max-width: none; }
+.hero-title .l2 { font-size: clamp(36px, min(10.6vw, 15svh), 168px); text-align: right; z-index: 3; margin-top: -.05em; padding-bottom: .04em; }
 .hero-title .l2 > span { animation-delay: .12s; }
 .hero-title sup { font-size: .38em; vertical-align: top; position: relative; top: .14em; letter-spacing: 0; }
 @keyframes up { from { transform: translateY(105%); } }
